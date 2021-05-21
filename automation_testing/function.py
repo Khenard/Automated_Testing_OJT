@@ -6,15 +6,13 @@ import time
 import config
 
 
-
-
-def loginfunction():
+def loginfunction(un, up):
     
     time.sleep(5)
-    usernametb = config.driver.find_element_by_id('loginemail').send_keys('superagent@unitest')
+    usernametb = config.driver.find_element_by_id('loginemail').send_keys(un)
     time.sleep(5)
     passwordtb = config.driver.find_element_by_id('loginpassword')
-    passwordtb.send_keys('Tester2021@')
+    passwordtb.send_keys(up)
     time.sleep(3)
     loginbtn = config.driver.find_element_by_xpath('//*[@id="mhLP-ln"]/div[2]/form/div[6]/button')
     loginbtn.click() 
