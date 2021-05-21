@@ -19,11 +19,11 @@ time.sleep(3)
 
 
 
-def searchpatient():
+def searchpatient1():
     searchtb = config.driver.find_element_by_css_selector('#searchbar__wrapper > div > input').send_keys('automated')
 
 
-searchpatient()
+searchpatient1()
 
 
 
