@@ -3,27 +3,30 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import os
 import time
-import function
-import config
 
 
-config.driver.get("https://qado.medisource.com/login")
-config.driver.maximize_window()
+chromedriver = os.path.abspath('chromedriver.exe')
+driver = webdriver.Chrome(chromedriver)
 
-function.loginfunction('superagent@unitest', 'Tester2021@')
+driver.get("https://app2.woundtrack.com/login")
+driver.maximize_window()
 
-time.sleep(5)
-
-config.driver.get('https://qado.medisource.com/patients/admitted')
 time.sleep(3)
 
+usernametb = driver.find_element_by_name('loginemail').send_keys('woundtrackdemo')
+time.sleep(3)
+
+passwordtb = driver.find_element_by_name('loginpassword').send_keys('Woundtrack2020@')
+time.sleep(3)
+
+loginbtn = driver.find_element_by_xpath('//*[@id="mCSB_1_container"]/div[2]/form/button').click()
 
 
-def searchpatient1():
-    searchtb = config.driver.find_element_by_css_selector('#searchbar__wrapper > div > input').send_keys('automated')
 
 
-searchpatient1()
+
+
+
 
 
 
