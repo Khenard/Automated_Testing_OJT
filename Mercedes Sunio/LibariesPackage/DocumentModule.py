@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 import os
 import time
-from selenium.webdriver.remote.webelement import WebElement
 
 chromedriver = os.path.abspath('chromedriver.exe')
 driver = webdriver.Chrome(chromedriver)
@@ -21,7 +20,7 @@ loginbtn = driver.find_element_by_xpath('/html/body/section/div/div[2]/form/div[
 loginbtn.click()
 time.sleep(5)
 
-driver.get("https://qado.medisource.com/library/blank-forms")
+driver.get("https://qado.medisource.com/library/documents")
 time.sleep(5)
 Editbtn = driver.find_element_by_xpath('//*[@id="titleNoteBar"]/div/div/div/div/div/button').click()
 time.sleep(3)
@@ -29,7 +28,8 @@ time.sleep(3)
 uploadbtn = driver.find_element_by_xpath('//*[@id="titleNoteBar"]/div/div/div/div/div/button[1]').click()
 time.sleep(5)
 
-browsebtn = driver.find_element_by_css_selector('body > div.modal.fade.ng-isolate-scope.patient-records-upload.in > div > div > div > div > div.container > div > div > button').send_keys("C://Users/HP/Pictures/Borders/bnw1.jpg")
+
+browsebtn = driver.find_element_by_css_selector('body > div.modal.fade.ng-isolate-scope.patient-records-upload.in > div > div > div > div > div.container > div > div > button').click()
 time.sleep(5)
 
 
@@ -37,8 +37,7 @@ time.sleep(5)
 
 
 
-
-
+ 
 
 
 
