@@ -18,14 +18,6 @@ def hospital_facility_add():
     selectType.click()
     time.sleep(2)
     
-    stateDdown = config.driver.find_element_by_xpath('//*[@id="state_chosen"]/a/div/b')
-    stateDdown.click()
-    time.sleep(2)
-    
-    selectState = config.driver.find_element_by_xpath('//*[@id="state_chosen"]/div')
-    selectState.click()
-    time.sleep(2)
-    
     nametb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div/table/tbody/tr[3]/td[2]/div/input')
     nametb.send_keys('Westeria Hospital')
     time.sleep(2)
@@ -36,6 +28,14 @@ def hospital_facility_add():
     
     citytb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div/table/tbody/tr[5]/td[2]/div/input')
     citytb.send_keys('Toronto')
+    time.sleep(2)
+    
+    stateDdown = config.driver.find_element_by_xpath('//*[@id="state_chosen"]/a/div/b')
+    stateDdown.click()
+    time.sleep(2)
+    
+    selectState = config.driver.find_element_by_xpath('//*[@id="state_chosen"]/div')
+    selectState.click()
     time.sleep(2)
     
     zip_codetb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')

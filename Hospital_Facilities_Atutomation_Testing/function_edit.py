@@ -67,7 +67,8 @@ def hospital_facility_edit():
     time.sleep(2)
     con_person.send_keys('Julie Mayer')
     
-    
+    savebtn = config.find_element_by_xpath('//*[@id="titleNoteBar"]/div/div/div/div/div/button')
+    savebtn.click()
     
     
     
