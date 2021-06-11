@@ -6,7 +6,7 @@ import time
 import config
 
 
-def user_add():
+def user_add():    
 
     fname = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[1]/td[2]/div/input')
     fname.send_keys('Cat')
@@ -20,148 +20,181 @@ def user_add():
     minitial.send_keys('M.')
     time.sleep(2)
     
+    
     suffixtb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[4]/td[2]/div/input')
     suffixtb.send_keys('II')
     time.sleep(2)
     
-    gendertb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[5]/td[2]/div/ng-form/label[2]/input')
-    gendertb.click()
+    genderCb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[5]/td[2]/div/ng-form/label[2]/input')
+    genderCb.click()
     time.sleep(2)
     
     bdate = config.driver.find_element_by_xpath('//*[@id="birthdate"]')
     bdate.send_keys('08091990')
     time.sleep(2)
     
-    racetb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[7]/td[2]/div/div/div/a')
-    racetb.click()
+    raceDdown = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[7]/td[2]/div/div/div/a')
+    raceDdown.click()
     time.sleep(2)
     
-    selectRace = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[7]/td[2]/div/div/div/a/span')
+    selectRace = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[7]/td[2]/div/div/div/div')
     selectRace.click()
     time.sleep(2)
     
-    maritalStats = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    maritalStats.send_keys('96799')
+    maritalStats = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[8]/td[2]/div/div/div/a')
+    maritalStats.click()
     time.sleep(2)
     
-    disciplinetb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    disciplinetb.send_keys('96799')
+    selectMarital = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[8]/td[2]/div/div/div/div')
+    selectMarital.click()
     time.sleep(2)
     
-    titletb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    titletb.send_keys('96799')
+    disciplinetb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[9]/td[2]/div/div/div/a')
+    disciplinetb.click()
     time.sleep(2)
     
-    hireCat = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    hireCat.send_keys('96799')
+    selectDiscipline = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[9]/td[2]/div/div/div/div')
+    selectDiscipline.click()
     time.sleep(2)
     
-    positiontb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    positiontb.send_keys('96799')
+    titletb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[10]/td[2]/div/div/div/a')
+    titletb.click()
     time.sleep(2)
     
-    ssstb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    ssstb.send_keys('96799')
+    selectTitle = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[10]/td[2]/div/div/div/div')
+    selectTitle.click()
     time.sleep(2)
     
-    cliniciantb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    cliniciantb.send_keys('96799')
+    hireCat = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[11]/td[2]/div/div/div/a')
+    hireCat.click()
     time.sleep(2)
     
-    companytb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    companytb.send_keys('96799')
+    selectHireCat = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[11]/td[2]/div/div/div/div')
+    selectHireCat.click()
     time.sleep(2)
     
-    address1 = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    address1.send_keys('96799')
+    positiontb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[12]/td[2]/div/div/div/a')
+    positiontb.click()
     time.sleep(2)
     
-    address2 = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    address2.send_keys('96799')
+    selectPosition = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[12]/td[2]/div/div/div/div')
+    selectPosition.click()
+    time.sleep(2)
+    
+    ssstb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[13]/td[2]/div/input')
+    ssstb.send_keys('1225566998')
+    time.sleep(2)
+    
+    cliniciantb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[14]/td[2]/div/input')
+    cliniciantb.send_keys('236899978')
+    time.sleep(2)
+    
+    companytb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[15]/td[2]/div/input')
+    companytb.send_keys('Winterfell Company')
+    time.sleep(2)
+    
+    address1 = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[16]/td[2]/div/textarea')
+    address1.send_keys('2411 Tycos Dr')
+    time.sleep(2)
+    
+    address2 = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[17]/td[2]/div/textarea')
+    address2.send_keys('2556 Tycose Dr')
     time.sleep(2)
 
-    citytb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    citytb.send_keys('96799')
+    citytb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[18]/td[2]/div/input')
+    citytb.send_keys('Toronto')
     time.sleep(2)
     
-    statetb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    statetb.send_keys('96799')
+    statetb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[19]/td[2]/div/div/div/a')
+    statetb.click()
     time.sleep(2)
     
-    zipCode = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    zipCode.send_keys('96799')
+    #selectState = config.driver.find_elements_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[19]/td[2]/div/div/div/a/div')
+    #selectState.click()
+    #time.sleep(2)
+    
+    zipCode = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[20]/td[2]/div/input')
+    zipCode.send_keys('91001')
     time.sleep(2)
     
-    phoneNo = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    phoneNo.send_keys('96799')
+    phoneNo = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[21]/td[2]/div/input')
+    phoneNo.send_keys('2013336666')
     time.sleep(2)
     
-    mobileNo = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    mobileNo.send_keys('96799')
+    mobileNo = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[22]/td[2]/div/input')
+    mobileNo.send_keys('2015558888')
     time.sleep(2)
     
-    faxtb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    faxtb.send_keys('96799')
+    faxtb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[23]/td[2]/div/input')
+    faxtb.send_keys('2017778888')
     time.sleep(2)
     
-    emailtb = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    emailtb.send_keys('96799')
+    emailtb = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[1]/tbody/tr[24]/td[2]/div/input')
+    emailtb.send_keys('catrn@mailinator.com')
     time.sleep(2)
     
-    hireDate = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    hireDate.send_keys('96799')
+    hireDate = config.driver.find_element_by_xpath('//*[@id="hireddate"]')
+    hireDate.send_keys('06102021')
     time.sleep(2)
     
-    terminationDate = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    terminationDate.send_keys('96799')
+    terminationDate = config.driver.find_element_by_xpath('//*[@id="terminationdate"]')
+    terminationDate.send_keys('06102030')
     time.sleep(2)
     
-    primaryLang = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    primaryLang.send_keys('96799')
+    primaryLang = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[3]/tbody/tr[1]/td[2]/div/div/div/a')
+    primaryLang.click()
     time.sleep(2)
     
-    secondaryLang = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    secondaryLang.send_keys('96799')
+    selectPrimaryLang = config.driver.find_elements_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[3]/tbody/tr[1]/td[2]/div/div/div/div')
+    selectPrimaryLang.click()
+    time.sleep(2)
+    
+    secondaryLang = config.driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[3]/tbody/tr[1]/td[3]/div/div/div/div')
+    secondaryLang.click()
+    time.sleep(2)
+    
+    selectsecondaryLang = config.driver.find_elements_by_xpath('//*[@id="content"]/data/div[2]/div/form/fieldset/div[2]/fieldset/table[3]/tbody/tr[1]/td[2]/div/div/div/div')
+    selectsecondaryLang.click()
     time.sleep(2)
     
     otherLang = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    otherLang.send_keys('96799')
+    otherLang.click()
     time.sleep(2)
     
     primaryVerbal = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    primaryVerbal.send_keys('96799')
+    primaryVerbal.click()
     time.sleep(2)
     
     secondaryVerbal = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    secondaryVerbal.send_keys('96799')
+    secondaryVerbal.click()
     time.sleep(2)
     
     otherVerbal = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    otherVerbal.send_keys('96799')
+    otherVerbal.click()
     time.sleep(2)
     
     primaryReading = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    primaryReading.send_keys('96799')
+    primaryReading.click()
     time.sleep(2)
     
     secondaryReading = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    secondaryReading.send_keys('96799')
+    secondaryReading.click()
     time.sleep(2)
     
     otherReading = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    otherReading.send_keys('96799')
+    otherReading.click()
     time.sleep(2)
     
     primaryWriting = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    primaryWriting.send_keys('96799')
+    primaryWriting.click()
     time.sleep(2)
     
     secondaryWriting = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    secondaryWriting.send_keys('96799')
+    secondaryWriting.click()
     time.sleep(2)
     
     otherWriting = config.driver.find_element_by_xpath('//*[@id="zipCode"]')
-    otherWriting.send_keys('96799')
+    otherWriting.click()
     time.sleep(2)
     
     
