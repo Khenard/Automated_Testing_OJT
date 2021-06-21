@@ -117,6 +117,7 @@ newfield = driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/ui-view/
 fieldchoose = driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/ui-view/div/div[2]/fieldset/ng-form/table/tbody/tr[1]/td[2]/div/div/div/div/ul/li[10]').click()
 entrynw = driver.find_element_by_xpath('//*[@id="content"]/data/div[2]/ui-view/div/div[2]/fieldset/ng-form/table/tbody/tr[2]/td[2]/input').send_keys('sample test')
 time.sleep(3)
+adbtn = driver.find_element_by_xpath('/html/body/div[10]/button').click()
 sevbtn = driver.find_element_by_xpath('//*[@id="titleNoteBar"]/tbody/tr/td/div/button').click()
 
 Mdobtn = driver.find_element_by_xpath('//*[@id="content"]/data/div[1]/div/div/div[2]/div/ul/li[5]/a').click()
